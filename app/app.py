@@ -1,4 +1,4 @@
-# Main Streamlit app plaimport streamlit as st
+import streamlit as st
 import torchaudio
 import torch
 from transformers import WhisperProcessor, WhisperForConditionalGeneration, MarianTokenizer, MarianMTModel
@@ -38,4 +38,3 @@ if uploaded_audio:
         translation = trans_tokenizer.batch_decode(translated_ids, skip_special_tokens=True)[0]
     st.markdown("### 🌐 Hindi/English Translation:")
     st.success(translation)
-ceholder
