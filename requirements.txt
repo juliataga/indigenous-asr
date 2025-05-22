@@ -1,0 +1,6 @@
+transformers
+datasets
+torchaudio
+TTS
+jiwer
+streamlit
